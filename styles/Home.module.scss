@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  padding: 20px 0;
+  padding: 1rem 2rem;
   @media (max-width: 498px) {
     display: block;
+    padding: 20px 0;
   }
 }
 
