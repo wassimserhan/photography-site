@@ -1,0 +1,63 @@
+.gallery {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+
+  @media (max-width: 1059px) {
+    max-width: 700px;
+  }
+  @media (max-width: 964px) {
+    max-width: 580px;
+  }
+
+  @media (max-width: 851px) {
+    max-width: 580px;
+  }
+}
+
+.slideImage {
+  width: 100%;
+}
+
+.eachSlide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 610px;
+}
+
+.eachSlide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+//Fade Effect
+
+.eachFade {
+  display: flex;
+  width: 100%;
+}
+
+.eachFade > div {
+  width: 75%;
+}
+
+.eachFade > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eachFade p {
+  width: 25%;
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}

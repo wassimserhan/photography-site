@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.logo {
+  display: block;
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.mainnav {
+  height: 100%; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  margin-right: 20px;
+
+  a {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    display: block;
+    padding: 0.2em;
+  }
+
+  a:hover {
+    color: orange;
+  }
+}
