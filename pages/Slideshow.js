@@ -53,7 +53,8 @@ const Slideshow = () => {
         {images.map((each, index) => (
           <div
             key={index}
-            className={styles.eachFade}
+            // className={(styles.eachFade, styles.imageSlide)}
+            className={`${styles.eachFade} ${styles.imageSlide}`}
             style={{ display: 'block' }}
           >
             <Image
