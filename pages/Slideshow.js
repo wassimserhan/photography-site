@@ -1,4 +1,4 @@
-import { Fade } from 'react-slideshow-image';
+import { Slide } from 'react-slideshow-image';
 import Image from 'next/image';
 import styles from '../styles/Slideshow.module.scss';
 import { useRef, useEffect } from 'react';
@@ -49,7 +49,7 @@ const Slideshow = () => {
 
   return (
     <main className={styles.gallery} style={{ position: 'relative' }}>
-      <Fade ref={slideRef} {...fadeProperties} {...properties}>
+      <Slide ref={slideRef} {...fadeProperties} {...properties}>
         {images.map((each, index) => (
           <div
             key={index}
@@ -66,7 +66,7 @@ const Slideshow = () => {
             />
           </div>
         ))}
-      </Fade>
+      </Slide>
     </main>
   );
 };
