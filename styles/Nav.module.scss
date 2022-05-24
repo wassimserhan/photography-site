@@ -16,13 +16,14 @@
   display: block;
   width: 200px;
   margin-bottom: 50px;
+  cursor: pointer;
   @media (max-width: 498px) {
     margin: 0;
   }
 }
 
 .mainnav {
-  height: 100%; /* 100% Full-height */
+  // height: 100%; /* 100% Full-height */
   width: 100%; /* 0 width - change this with JavaScript */
   // margin-right: 20px;
   padding: 20px;

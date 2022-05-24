@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import Footer from './Footer';
+import { SocialIcon } from 'react-social-icons';
 import styles from '../styles/Nav.module.scss';
-
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import 'react-pro-sidebar/dist/css/styles.css';
 
 export default function Nav() {
   return (
@@ -11,7 +10,7 @@ export default function Nav() {
       <Link href="/">
         <img
           className={styles.logo}
-          src="/logo.png"
+          src="/logo2.png"
           alt="Wassim Serhan Photography"
         />
       </Link>
@@ -20,7 +19,17 @@ export default function Nav() {
         <Link href="/photographs">Photographs</Link>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
+        <br />
+        <SocialIcon
+          url="https://instagram.com/wassimserhan"
+          target="_blank"
+          rel="noopener"
+          bgColor="#d1d1d1"
+          style={{ height: 20, width: 20 }}
+        />
       </nav>
+
+      <Footer />
     </header>
   );
 }
