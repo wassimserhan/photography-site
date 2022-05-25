@@ -1,14 +1,13 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
+import Image from 'next/image';
 import styles from '../styles/Header.module.scss';
 
 import Hamburger from 'hamburger-react';
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
-
-  const shouldAddEventHandler = false;
 
   function close() {
     setOpen(!isOpen);
@@ -39,11 +38,15 @@ export default function Header() {
   return (
     <header className={styles.container}>
       <Link href="/">
-        <img
+        <Image
           onClick={isOpen ? close : undefined}
           className={styles.logo}
+          width="250"
+          height="1"
+          layout="intrinsic"
           src="/logo2.png"
           alt="Wassim Serhan Photography"
+          priority
         />
       </Link>
 
