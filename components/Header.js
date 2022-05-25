@@ -41,8 +41,8 @@ export default function Header() {
         <Image
           onClick={isOpen ? close : undefined}
           className={styles.logo}
-          width="250"
-          height="1"
+          width="200"
+          height="40"
           layout="intrinsic"
           src="/logo2.png"
           alt="Wassim Serhan Photography"
