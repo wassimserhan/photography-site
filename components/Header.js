@@ -8,6 +8,8 @@ import Hamburger from 'hamburger-react';
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
 
+  const shouldAddEventHandler = false;
+
   function close() {
     setOpen(!isOpen);
   }
@@ -38,7 +40,7 @@ export default function Header() {
     <header className={styles.container}>
       <Link href="/">
         <img
-          onClick={close}
+          onClick={isOpen ? close : undefined}
           className={styles.logo}
           src="/logo2.png"
           alt="Wassim Serhan Photography"
