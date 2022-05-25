@@ -63,7 +63,8 @@
   top: 90px;
   right: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #fff;
+  z-index: 10;
   @media (min-width: 498px) {
     display: none;
   }
