@@ -1,6 +1,7 @@
 .container {
   display: flex;
   padding: 1rem 2rem;
+  height: 100vh;
   // position: relative;
   @media (max-width: 498px) {
     flex-direction: column;

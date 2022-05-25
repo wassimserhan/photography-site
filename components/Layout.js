@@ -1,14 +1,15 @@
-import Nav from './Nav';
-
-import styles from '../styles/Layout.module.scss';
+import Header from './Header';
+import Footer from './Footer';
+import layoutStyles from '../styles/Layout.module.scss';
 
 export default function Layout({ children }) {
   return (
     <>
-      <div className={styles.container}>
-        <Nav />
-        <main className={styles.main}>{children}</main>
+      <div className={layoutStyles.container}>
+        <Header />
+        <main className={layoutStyles.main}>{children}</main>
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
+
+import Hero from '../components/Hero';
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
         <meta name="keywords" content="street photography" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{ display: 'block', padding: '2rem 0' }}>
-        <Image layout="fixed" width="800" height="600" src="/images/hero.jpg" />
-      </div>
+      <Hero />
     </>
   );
 }

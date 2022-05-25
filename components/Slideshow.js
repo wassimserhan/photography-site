@@ -19,7 +19,7 @@ const images = [
 
 export default function Slideshow() {
   return (
-    <main className={styles.gallery} style={{ position: 'relative' }}>
+    <section className={styles.gallery} style={{ position: 'relative' }}>
       <Swiper
         modules={[Navigation, Keyboard, Autoplay]}
         spaceBetween={50}
@@ -33,7 +33,7 @@ export default function Slideshow() {
           <SwiperSlide key={index}>
             <div>
               <Image
-                layout="responsive"
+                layout="intrinsic"
                 width="3393"
                 height="2545"
                 src={each}
@@ -43,6 +43,6 @@ export default function Slideshow() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </main>
+    </section>
   );
 }

@@ -1,14 +1,17 @@
 import Image from 'next/image';
 
+import styles from '../styles/Slideshow.module.scss';
+
 export default function Hero() {
   return (
-    <div style={{ display: 'block' }}>
+    <section className={styles.gallery}>
       <Image
-        layout="responsive"
-        width="6000"
-        height="4000"
+        layout="intrinsic"
+        width="3393"
+        height="2545"
         src="/images/hero.jpg"
+        priority
       />
-    </div>
+    </section>
   );
 }
