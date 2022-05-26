@@ -17,7 +17,7 @@ import 'swiper/css/navigation';
 //   '/images/slide_4.jpg'
 // ];
 
-export default function Slideshow({ images }) {
+export default function Slideshow({ photos }) {
   return (
     <section className={styles.gallery} style={{ position: 'relative' }}>
       <Swiper
@@ -29,14 +29,14 @@ export default function Slideshow({ images }) {
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
       >
-        {images.map((image, index) => (
+        {photos.map((photo, index) => (
           <SwiperSlide key={index}>
             <div>
               <Image
                 layout="intrinsic"
                 width="3393"
                 height="2545"
-                src={image.image}
+                src={photo.image}
                 alt="photographs"
                 loading="lazy"
               />
