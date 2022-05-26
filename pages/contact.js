@@ -5,11 +5,7 @@ export default function Contact() {
   return (
     <section className={styles.container}>
       <h2>Contact</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel,
-        fuga libero esse, modi omnis magnam ex atque facere adipisci praesentium
-        tenetur rem, iste voluptatum at ipsa cumque labore vitae!
-      </p>
+      <p>Question? Something nice to say? We’d love to hear it.</p>
       <Form />
     </section>
   );

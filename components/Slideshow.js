@@ -11,13 +11,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const images = [
-  '/images/slide_2.jpg',
-  '/images/slide_3.jpg',
-  '/images/slide_4.jpg'
-];
+// const images = [
+//   '/images/slide_2.jpg',
+//   '/images/slide_3.jpg',
+//   '/images/slide_4.jpg'
+// ];
 
-export default function Slideshow() {
+export default function Slideshow({ images }) {
   return (
     <section className={styles.gallery} style={{ position: 'relative' }}>
       <Swiper
@@ -29,15 +29,16 @@ export default function Slideshow() {
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
       >
-        {images.map((each, index) => (
+        {images.map((image, index) => (
           <SwiperSlide key={index}>
             <div>
               <Image
                 layout="intrinsic"
                 width="3393"
                 height="2545"
-                src={each}
-                priority
+                src={image.image}
+                alt="photographs"
+                loading="lazy"
               />
             </div>
           </SwiperSlide>

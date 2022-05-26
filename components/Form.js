@@ -81,6 +81,7 @@ export default function Form() {
           required
           value={inputs.email}
         />
+
         <label htmlFor="message">Message</label>
         <textarea
           id="message"
