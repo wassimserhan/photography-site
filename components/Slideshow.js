@@ -26,8 +26,6 @@ export default function Slideshow({ photos }) {
         slidesPerView={1}
         keyboard
         autoplay
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={swiper => console.log(swiper)}
       >
         {photos.map((photo, index) => (
           <SwiperSlide key={index}>

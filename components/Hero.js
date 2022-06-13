@@ -25,7 +25,7 @@ export default function Hero() {
           alt="Domino Park in Williamsburg"
           width={1000}
           height={750}
-          // layout="intrinsic"
+          layout="intrinsic"
           // width="6000"
           // height="4000"
           // src="/images/hero.jpg"
