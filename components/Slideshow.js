@@ -32,8 +32,8 @@ export default function Slideshow({ photos }) {
             <div>
               <Image
                 layout="intrinsic"
-                width="3393"
-                height="2545"
+                width="1024"
+                height="683"
                 src={photo.image}
                 alt="photographs"
                 loading="lazy"
