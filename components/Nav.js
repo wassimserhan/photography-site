@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import Image from 'next/image';
 import styles from '../styles/Nav.module.scss';
@@ -8,6 +8,14 @@ import Hamburger from 'hamburger-react';
 
 export default function Nav() {
   const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'unset';
+    }
+  }, [isOpen]);
 
   function close() {
     setOpen(!isOpen);
