@@ -7,7 +7,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Wassim Serhan Photography</title>
-        <meta name="description" content="Wassim Street Photography" />
+        <meta
+          name="description"
+          content="Wassim Serhan is a street photographer based in NYC."
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
