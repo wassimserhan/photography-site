@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Wassim Serhan Photography</title>
+        <title>Wassim Serhan</title>
         <meta
           name="description"
           content="Wassim Serhan is a street photographer based in NYC."
