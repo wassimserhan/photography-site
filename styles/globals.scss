@@ -86,3 +86,10 @@ button:hover {
     display: none;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  @media (max-width: 498px) {
+    display: none !important;
+  }
+}

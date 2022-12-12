@@ -3,17 +3,17 @@ import { useState } from 'react';
 // Import Swiper React components
 import Image from 'next/image';
 
-import styles from '../styles/Slideshow.module.scss';
-
-import { Navigation, Keyboard, Thumbs, FreeMode } from 'swiper';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/free-mode';
+
+import styles from '../styles/Slideshow.module.scss';
+
+import { Navigation, Keyboard, Thumbs, FreeMode } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Slideshow({ photos }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
