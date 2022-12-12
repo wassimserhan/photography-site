@@ -29,7 +29,7 @@ export default function Nav() {
         <Link toggled={isOpen} toggle={setOpen} href="/photographs">
           Photographs
         </Link>
-        <Link href="/bio">Bio</Link>
+        <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
         <br />
         <SocialIcon
