@@ -5,7 +5,7 @@ export default function About() {
     <section className={styles.container}>
       <h2>About</h2>
       <p className={styles.description}>
-        Wassim Serhan is a Palestinian American photographer who lives and works
+        Wassim Serhan is a photographer who lives and works
         in New York City. From a young age, Wassim has always had an interest in
         people, a curiosity that inspired him to create photographs, turning the
         mundane into a spectacle illusion. Wassim’s passion for candid street
